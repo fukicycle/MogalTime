@@ -22,7 +22,11 @@ name: Build and deploy ASP.Net Core app to an Azure Web App
 env:
   AZURE_WEBAPP_NAME: MogalTime    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+<<<<<<< HEAD
   DOTNET_VERSION: '7.0.103'                 # set this to the .NET Core version to use
+=======
+  DOTNET_VERSION: '6'                 # set this to the .NET Core version to use
+>>>>>>> parent of 3e8b01f (Update azure-webapps-dotnet-core.yml)
 
 on:
   push:

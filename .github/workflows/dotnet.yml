@@ -28,7 +28,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
       
     - name: Publish .NET Core Project
-      run: dotnet publish src/MogalTime/MogalTime.csproj -c Release -o release --nologo
+      run: dotnet publish -c Release -o release --nologo
 
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
